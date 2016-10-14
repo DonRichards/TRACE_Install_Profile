@@ -1,0 +1,58 @@
+; trace make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ Libraries +++++
+
+; citeproc-php
+libraries[citeproc-php][directory_name] = "citeproc-php"
+libraries[citeproc-php][type] = "library"
+libraries[citeproc-php][destination] = "libraries"
+libraries[citeproc-php][download][type] = "get"
+libraries[citeproc-php][download][url] = "" ; TODO add download URI
+
+; pdfjs
+libraries[pdfjs][directory_name] = "pdfjs"
+libraries[pdfjs][type] = "library"
+libraries[pdfjs][destination] = "libraries"
+libraries[pdfjs][download][type] = "get"
+libraries[pdfjs][download][url] = "" ; TODO add download URI
+
+; tuque
+libraries[tuque][directory_name] = "tuque"
+libraries[tuque][type] = "library"
+libraries[tuque][destination] = "libraries"
+libraries[tuque][download][type] = "get"
+libraries[tuque][download][url] = "" ; TODO add download URI
+
+; bookreader
+libraries[bookreader][directory_name] = "bookreader"
+libraries[bookreader][type] = "library"
+libraries[bookreader][destination] = "libraries"
+libraries[bookreader][download][type] = "get"
+libraries[bookreader][download][url] = "" ; TODO add download URI
+
+; openseadragon
+libraries[openseadragon][directory_name] = "openseadragon"
+libraries[openseadragon][type] = "library"
+libraries[openseadragon][destination] = "libraries"
+libraries[openseadragon][download][type] = "get"
+libraries[openseadragon][download][url] = "" ; TODO add download URI
+
+; BagItPHP
+libraries[BagItPHP][directory_name] = "BagItPHP"
+libraries[BagItPHP][type] = "library"
+libraries[BagItPHP][destination] = "libraries"
+libraries[BagItPHP][download][type] = "get"
+libraries[BagItPHP][download][url] = "" ; TODO add download URI
+
+; trace
+libraries[trace][directory_name] = "trace"
+libraries[trace][type] = "profile"
+libraries[trace][destination] = "../../profiles"
+libraries[trace][download][type] = "get"
+libraries[trace][download][url] = "https://raw.githubusercontent.com/DonRichards/TRACE_Install_Profile/master/trace-7.x-1.x-dev.tar.gz"

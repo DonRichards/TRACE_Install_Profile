@@ -1,0 +1,211 @@
+; Packaging information for trace
+name = "TRACE"
+description = "This is a default export of the Current Trace install profile."
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+; Date/Time
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+dependencies[] = datepicker
+dependencies[] = datepicker_views
+; Development
+dependencies[] = coder
+dependencies[] = devel
+dependencies[] = devel_node_access
+dependencies[] = profiler_builder
+dependencies[] = profiler_builder_extras
+; Islandora
+dependencies[] = islandora
+dependencies[] = islandora_populator
+dependencies[] = islandora_solr_metadata
+; Islandora Dependencies
+dependencies[] = objective_forms
+dependencies[] = php_lib
+dependencies[] = xml_form_api
+dependencies[] = xml_form_elements
+dependencies[] = xml_schema_api
+; Islandora Search
+dependencies[] = islandora_solr
+dependencies[] = islandora_solr_config
+dependencies[] = islandora_solr_views
+; Islandora Solution Packs
+dependencies[] = bibutils
+dependencies[] = citation_exporter
+dependencies[] = citeproc
+dependencies[] = doi_importer
+dependencies[] = endnotexml_importer
+dependencies[] = islandora_audio
+dependencies[] = islandora_basic_collection
+dependencies[] = islandora_basic_image
+dependencies[] = islandora_bibliography
+dependencies[] = islandora_book
+dependencies[] = islandora_doi
+dependencies[] = islandora_endnotexml
+dependencies[] = islandora_google_scholar
+dependencies[] = islandora_large_image
+dependencies[] = islandora_paged_content
+dependencies[] = islandora_pdf
+dependencies[] = islandora_pmid
+dependencies[] = islandora_ris
+dependencies[] = islandora_scholar
+dependencies[] = islandora_scholar_embargo
+dependencies[] = islandora_video
+dependencies[] = pmid_importer
+dependencies[] = ris_importer
+; Islandora Tools
+dependencies[] = csl
+dependencies[] = islandora_bagit
+dependencies[] = islandora_batch
+dependencies[] = islandora_batch_report
+dependencies[] = islandora_binary_object
+dependencies[] = islandora_bookmark
+dependencies[] = islandora_checksum
+dependencies[] = islandora_checksum_checker
+dependencies[] = islandora_fits
+dependencies[] = islandora_importer
+dependencies[] = islandora_ingest_collections
+dependencies[] = islandora_oai
+dependencies[] = islandora_ocr
+dependencies[] = islandora_simple_workflow
+dependencies[] = islandora_usage_stats
+dependencies[] = islandora_xacml_api
+dependencies[] = islandora_xacml_editor
+dependencies[] = islandora_xmlsitemap
+dependencies[] = xml_form_builder
+dependencies[] = xml_forms
+dependencies[] = zip_importer
+; Islandora Viewers
+dependencies[] = islandora_internet_archive_bookreader
+dependencies[] = islandora_openseadragon
+; LDAP
+dependencies[] = simple_ldap
+; Other
+dependencies[] = colorbox
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = imagemagick
+dependencies[] = libraries
+dependencies[] = pathauto
+dependencies[] = token
+; Rules
+dependencies[] = rules
+; User interface
+dependencies[] = jquery_update
+; Variable
+dependencies[] = variable
+; Views
+dependencies[] = views
+dependencies[] = views_data_export
+; XML sitemap
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_custom
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[cache_class_cache_ctools_css] = 'CToolsCssCache'
+variables[date_api_version] = '7.2'
+variables[date_default_timezone] = 'UTC'
+variables[date_views_day_format_without_year] = 'l, F j'
+variables[date_views_day_format_with_year] = 'l, F j, Y'
+variables[date_views_month_format_without_year] = 'F'
+variables[date_views_month_format_with_year] = 'F Y'
+variables[date_views_week_format_without_year] = 'F j'
+variables[date_views_week_format_with_year] = 'F j, Y'
+variables[filter_fallback_format] = 'plain_text'
+variables[imagemagick_convert] = '/usr/bin/convert'
+variables[image_toolkit] = 'imagemagick'
+variables[islandora_audio_viewers][name][none] = 'none'
+variables[islandora_audio_viewers][name][islandora_videojs] = 'islandora_videojs'
+variables[islandora_audio_viewers][default] = 'islandora_videojs'
+variables[islandora_batch_java] = '/usr/bin/java'
+variables[islandora_book_page_viewers][name][none] = 'none'
+variables[islandora_book_page_viewers][name][islandora_openseadragon] = 'islandora_openseadragon'
+variables[islandora_book_page_viewers][default] = 'islandora_openseadragon'
+variables[islandora_book_viewers][name][none] = 'none'
+variables[islandora_book_viewers][name][islandora_internet_archive_bookreader] = 'islandora_internet_archive_bookreader'
+variables[islandora_book_viewers][default] = 'islandora_internet_archive_bookreader'
+variables[islandora_checksum_checksum_type] = 'SHA-1'
+variables[islandora_checksum_enable_checksum] = true
+variables[islandora_fits_executable_path] = '/usr/local/fits/fits-0.10.1/fits.sh'
+variables[islandora_lame_url] = '/usr/bin/lame'
+variables[islandora_large_image_viewers][name][none] = 'none'
+variables[islandora_large_image_viewers][name][islandora_openseadragon] = 'islandora_openseadragon'
+variables[islandora_large_image_viewers][default] = 'islandora_openseadragon'
+variables[islandora_ocr_tesseract] = '/usr/bin/tesseract'
+variables[islandora_paged_content_gs] = '/usr/bin/gs'
+variables[islandora_pdf_create_fulltext] = 1
+variables[islandora_use_kakadu] = true
+variables[islandora_video_ffmpeg_path] = '/usr/local/bin/ffmpeg'
+variables[islandora_video_viewers][name][none] = 'none'
+variables[islandora_video_viewers][name][islandora_videojs] = 'islandora_videojs'
+variables[islandora_video_viewers][default] = 'islandora_videojs'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[path_alias_whitelist][node] = true
+variables[path_alias_whitelist][user] = true
+variables[simple_ldap_basedn] = 'dc=tennessee, dc=edu'
+variables[simple_ldap_host] = 'ldap://ldap.utk.edu'
+variables[simple_ldap_port] = '636'
+variables[simple_ldap_readonly] = 1
+variables[simple_ldap_user_attribute_mail] = 'mail'
+variables[simple_ldap_user_attribute_name] = 'uid'
+variables[simple_ldap_user_basedn] = 'dc=tennessee, dc=edu'
+variables[simple_ldap_user_scope] = 'sub'
+variables[theme_default] = 'UTKdrupal'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+variables[variable_module_list][colorbox][0] = 'colorbox_text_start'
+variables[variable_module_list][colorbox][1] = 'colorbox_text_stop'
+variables[variable_module_list][colorbox][2] = 'colorbox_text_current'
+variables[variable_module_list][colorbox][3] = 'colorbox_text_previous'
+variables[variable_module_list][colorbox][4] = 'colorbox_text_next'
+variables[variable_module_list][colorbox][5] = 'colorbox_text_close'
+variables[xmlsitemap_generated_last] = 1476388100
+
